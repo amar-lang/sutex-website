@@ -5,14 +5,14 @@ import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Boxes, ArrowRight, Sparkles } from "lucide-react";
 import { GlobalHUD } from "@/components/GlobalHUD";
 
 const products = [
     {
         name: "ApartMeter",
-        slug: "apartmeter",
+        // Served by the ApartMeter app itself via Nginx — plain anchor, not a Next route
+        href: "/apartmeter/",
         tagline: "Metering & billing for apartment societies",
         description:
             "Our flagship SaaS: per-flat utility metering, maintenance billing and UPI collections for apartment societies. Live in Karnataka.",
@@ -68,9 +68,9 @@ export default function ProductsPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                         {products.map((product) => (
-                            <Link
-                                key={product.slug}
-                                href={`/products/${product.slug}`}
+                            <a
+                                key={product.name}
+                                href={product.href}
                                 className="group bg-white rounded-none shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col"
                             >
                                 <div className="relative bg-sutex-navy p-8 pb-0 overflow-hidden">
@@ -93,11 +93,11 @@ export default function ProductsPage() {
                                     <p className="text-sm font-bold uppercase tracking-widest text-sutex-orange mb-3">{product.tagline}</p>
                                     <p className="text-gray-600 text-sm leading-relaxed mb-8 flex-grow">{product.description}</p>
                                     <span className="inline-flex items-center text-xs font-black uppercase tracking-widest text-sutex-navy group-hover:text-sutex-orange transition-colors">
-                                        <span>Learn More</span>
+                                        <span>Explore ApartMeter</span>
                                         <ArrowRight size={14} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
                                     </span>
                                 </div>
-                            </Link>
+                            </a>
                         ))}
 
                         {/* Placeholder for upcoming products */}
