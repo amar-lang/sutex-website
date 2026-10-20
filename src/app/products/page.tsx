@@ -79,8 +79,18 @@ export default function ProductsPage() {
                                         alt={product.imageAlt}
                                         width={750}
                                         height={470}
-                                        className="rounded-t-xl border border-white/10 shadow-2xl w-full h-auto translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
+                                        className="rounded-t-xl border border-white/10 shadow-2xl w-[88%] ml-auto h-auto translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
                                     />
+                                    {/* Secondary focus: resident app peeking over the panel */}
+                                    <div className="absolute -bottom-10 left-6 w-[24%] min-w-[110px] group-hover:-translate-y-2 transition-transform duration-500">
+                                        <Image
+                                            src="/apartmeter/app-resident-home.png"
+                                            alt="ApartMeter resident Android app showing dues and monthly water and gas usage"
+                                            width={270}
+                                            height={590}
+                                            className="rounded-2xl border border-white/20 shadow-2xl w-full h-auto"
+                                        />
+                                    </div>
                                 </div>
                                 <div className="p-8 flex flex-col flex-grow">
                                     <div className="flex items-center gap-3 mb-4">
