@@ -1,8 +1,18 @@
+import { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Sutex privacy policy. Learn how we collect, use, and protect your personal data. Registered MSME under Indian law.",
+  alternates: {
+    canonical: "/privacy",
+  },
+};
 
 export default function PrivacyPage() {
     return (
@@ -31,13 +41,12 @@ export default function PrivacyPage() {
 
                         <section>
                             <h2 className="text-xl font-bold text-sutex-navy mb-4">3. Use of Information</h2>
-                            <p>Your data is used exclusively to:
-                                <ul className="list-disc pl-6 mt-2 space-y-2">
-                                    <li>Provide and maintain our custom software services.</li>
-                                    <li>Communicate with you regarding project inquiries.</li>
-                                    <li>Comply with legal obligations under Indian law.</li>
-                                </ul>
-                            </p>
+                            <p>Your data is used exclusively to:</p>
+                            <ul className="list-disc pl-6 mt-2 space-y-2">
+                                <li>Provide and maintain our custom software services.</li>
+                                <li>Communicate with you regarding project inquiries.</li>
+                                <li>Comply with legal obligations under Indian law.</li>
+                            </ul>
                         </section>
 
                         <section>

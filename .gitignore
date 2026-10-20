@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# raw design/screenshot sources (web-ready copies live in public/)
+/site-assets/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

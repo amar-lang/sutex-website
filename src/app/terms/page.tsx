@@ -1,8 +1,18 @@
+import { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description:
+    "Terms of service for Sutex. Read our service agreement, intellectual property terms, and governing law under Indian jurisdiction.",
+  alternates: {
+    canonical: "/terms",
+  },
+};
 
 export default function TermsPage() {
     return (

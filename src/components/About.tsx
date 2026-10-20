@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
 export function About() {
     return (
         <section id="about" className="py-24 bg-white border-y border-gray-100">
@@ -15,6 +18,9 @@ export function About() {
                             <p>
                                 Our philosophy is simple: <strong>Innovate. Build. Scale.</strong> We take the industrial precision of engineering and apply it to the fast-paced world of startups, ensuring your foundations are as strong as your vision.
                             </p>
+                            <Link href="/about" className="inline-flex items-center text-sutex-orange font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">
+                                Read Our Full Story <ArrowRight className="ml-2 w-4 h-4" />
+                            </Link>
                         </div>
                     </div>
                     <div className="relative">

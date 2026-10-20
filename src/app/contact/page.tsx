@@ -77,8 +77,8 @@ export default function ContactPage() {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <a href="tel:+919483932100" className="text-lg font-medium hover:text-sutex-orange transition-colors">
-                                    +91 9483932100
+                                <a href="tel:+919448556091" className="text-lg font-medium hover:text-sutex-orange transition-colors">
+                                    +91 9448556091
                                 </a>
                             </CardContent>
                         </Card>

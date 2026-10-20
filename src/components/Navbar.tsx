@@ -19,9 +19,9 @@ export function Navbar() {
                             <Image
                                 src="/sutexlogo.png"
                                 alt="Sutex Logo"
-                                width={240}
-                                height={80}
-                                className="h-12 md:h-16 w-auto object-contain"
+                                width={300}
+                                height={100}
+                                className="h-14 md:h-20 w-auto object-contain"
                                 priority
                             />
                         </Link>
@@ -29,10 +29,16 @@ export function Navbar() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
-                        <Link href="#services" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
+                        <Link href="/services" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
                             Services
                         </Link>
-                        <Link href="#about" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
+                        <Link href="/framework" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
+                            Framework
+                        </Link>
+                        <Link href="/apartmeter" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
+                            ApartMeter
+                        </Link>
+                        <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
                             About
                         </Link>
                         <Link href="/contact">
@@ -53,10 +59,16 @@ export function Navbar() {
                             <SheetContent side="right" className="bg-white p-8">
                                 <SheetTitle className="text-sutex-navy font-bold mb-8">Sutex Menu</SheetTitle>
                                 <div className="flex flex-col space-y-6 mt-4">
-                                    <Link href="#services" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
+                                    <Link href="/services" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
                                         Services
                                     </Link>
-                                    <Link href="#about" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
+                                    <Link href="/framework" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
+                                        Framework
+                                    </Link>
+                                    <Link href="/apartmeter" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
+                                        ApartMeter
+                                    </Link>
+                                    <Link href="/about" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
                                         About
                                     </Link>
                                     <Link href="/contact" className="w-full">
