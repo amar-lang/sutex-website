@@ -21,7 +21,7 @@ const highlights = [
 
 export function FeaturedProduct() {
     return (
-        <section id="product" className="py-24 bg-sutex-navy text-white relative overflow-hidden">
+        <section id="products" className="py-24 bg-sutex-navy text-white relative overflow-hidden">
             {/* Subtle grid texture */}
             <div
                 className="absolute inset-0 opacity-[0.04]"
@@ -33,17 +33,26 @@ export function FeaturedProduct() {
             />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl font-black uppercase tracking-widest mb-4">Our Product</h2>
-                    <div className="h-1 w-20 bg-sutex-orange mx-auto"></div>
+                    <h2 className="text-3xl font-black uppercase tracking-widest mb-4">Our Products</h2>
+                    <div className="h-1 w-20 bg-sutex-orange mx-auto mb-6"></div>
+                    <p className="text-slate-400 max-w-2xl mx-auto">
+                        We don&apos;t just build for clients — we ship and operate our own products
+                        on the same engineering framework.
+                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Copy */}
                     <div>
-                        <span className="inline-flex items-center px-4 py-1 bg-white/10 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
-                            <span className="w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse"></span>
-                            Live in Karnataka
-                        </span>
+                        <div className="flex flex-wrap items-center gap-3 mb-6">
+                            <span className="inline-flex items-center px-4 py-1 bg-sutex-orange/20 text-sutex-orange rounded-full text-[10px] font-black uppercase tracking-widest">
+                                Flagship
+                            </span>
+                            <span className="inline-flex items-center px-4 py-1 bg-white/10 rounded-full text-[10px] font-black uppercase tracking-widest">
+                                <span className="w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse"></span>
+                                Live in Karnataka
+                            </span>
+                        </div>
                         <h3 className="text-3xl md:text-4xl font-black mb-6 tracking-tight leading-tight">
                             ApartMeter — the money system for{" "}
                             <span className="text-sutex-orange">apartment societies.</span>
@@ -108,6 +117,10 @@ export function FeaturedProduct() {
                         </p>
                     </div>
                 </div>
+
+                <p className="text-center text-sm text-slate-500 mt-20 pt-10 border-t border-white/10">
+                    More products are in the works — engineered on the same framework that powers ApartMeter.
+                </p>
             </div>
         </section>
     );
