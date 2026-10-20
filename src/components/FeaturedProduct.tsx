@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Camera, ReceiptText, IndianRupee, ArrowRight } from "lucide-react";
 
 const highlights = [
@@ -74,13 +73,14 @@ export function FeaturedProduct() {
                             offline-first sync, ML-driven OCR and payment infrastructure, all in production.
                         </p>
 
-                        <Link
-                            href="/apartmeter"
+                        {/* Plain anchor: /apartmeter/ is served by the ApartMeter app via Nginx, not this Next.js site */}
+                        <a
+                            href="/apartmeter/"
                             className="inline-flex items-center bg-sutex-orange hover:bg-sutex-orange/90 text-white font-black uppercase tracking-wider text-xs px-8 py-4 transition-colors group"
                         >
                             <span>Explore ApartMeter</span>
                             <ArrowRight size={14} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
-                        </Link>
+                        </a>
                     </div>
 
                     {/* Product visuals */}

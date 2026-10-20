@@ -47,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/apartmeter`,
+      url: `${baseUrl}/apartmeter/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,

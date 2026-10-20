@@ -35,9 +35,9 @@ export function Navbar() {
                         <Link href="/framework" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
                             Framework
                         </Link>
-                        <Link href="/apartmeter" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
+                        <a href="/apartmeter/" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
                             ApartMeter
-                        </Link>
+                        </a>
                         <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
                             About
                         </Link>
@@ -65,9 +65,9 @@ export function Navbar() {
                                     <Link href="/framework" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
                                         Framework
                                     </Link>
-                                    <Link href="/apartmeter" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
+                                    <a href="/apartmeter/" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
                                         ApartMeter
-                                    </Link>
+                                    </a>
                                     <Link href="/about" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
                                         About
                                     </Link>
