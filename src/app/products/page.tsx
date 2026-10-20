@@ -71,6 +71,8 @@ export default function ProductsPage() {
                             <a
                                 key={product.name}
                                 href={product.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="group bg-white rounded-none shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col"
                             >
                                 <div className="relative bg-sutex-navy p-8 pb-0 overflow-hidden">
