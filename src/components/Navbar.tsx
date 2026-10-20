@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
     Sheet,
     SheetContent,
@@ -35,23 +35,9 @@ export function Navbar() {
                         <Link href="/framework" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
                             Framework
                         </Link>
-                        <div className="relative group">
-                            <button className="flex items-center text-sm font-medium text-gray-700 group-hover:text-sutex-orange transition-colors">
-                                Products
-                                <ChevronDown size={14} className="ml-1 transition-transform duration-200 group-hover:rotate-180" />
-                            </button>
-                            {/* pt-4 keeps the hover bridge between trigger and panel */}
-                            <div className="absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                                <div className="bg-white border border-gray-100 shadow-xl min-w-[240px] py-2">
-                                    <a href="/apartmeter/" className="block px-5 py-3 hover:bg-gray-50 transition-colors">
-                                        <span className="block text-sm font-bold text-sutex-navy">ApartMeter</span>
-                                        <span className="block text-xs text-gray-500 mt-0.5">
-                                            Metering & billing for apartment societies
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <Link href="/products" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
+                            Products
+                        </Link>
                         <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-sutex-orange transition-colors">
                             About
                         </Link>
@@ -79,12 +65,9 @@ export function Navbar() {
                                     <Link href="/framework" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
                                         Framework
                                     </Link>
-                                    <div>
-                                        <p className="text-lg font-bold text-sutex-navy mb-3">Products</p>
-                                        <a href="/apartmeter/" className="block pl-4 border-l-2 border-sutex-orange/40 text-base font-medium text-gray-700 hover:text-sutex-orange">
-                                            ApartMeter
-                                        </a>
-                                    </div>
+                                    <Link href="/products" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
+                                        Products
+                                    </Link>
                                     <Link href="/about" className="text-lg font-bold text-sutex-navy hover:text-sutex-orange">
                                         About
                                     </Link>
