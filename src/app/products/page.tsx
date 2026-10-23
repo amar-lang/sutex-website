@@ -10,14 +10,14 @@ import { GlobalHUD } from "@/components/GlobalHUD";
 
 const products = [
     {
-        name: "ApartMeter",
-        // Served by the ApartMeter app itself via Nginx — plain anchor, not a Next route
+        name: "MeterMint",
+        // Served by the MeterMint app itself via Nginx (still at /apartmeter/) — plain anchor, not a Next route
         href: "/apartmeter/",
-        tagline: "Metering & billing for apartment societies",
+        tagline: "Fair billing. Faster collections.",
         description:
             "Our flagship SaaS: per-flat utility metering, maintenance billing and UPI collections for apartment societies. Live in Karnataka.",
         image: "/apartmeter/panel-dashboard.png",
-        imageAlt: "ApartMeter committee dashboard showing billing cycle, outstanding dues and flagged readings",
+        imageAlt: "MeterMint committee dashboard showing billing cycle, outstanding dues and flagged readings",
         badge: "Live in Karnataka",
     },
 ];
@@ -87,7 +87,7 @@ export default function ProductsPage() {
                                     <div className="absolute -bottom-10 left-6 w-[24%] min-w-[110px] group-hover:-translate-y-2 transition-transform duration-500">
                                         <Image
                                             src="/apartmeter/app-resident-home.png"
-                                            alt="ApartMeter resident Android app showing dues and monthly water and gas usage"
+                                            alt="MeterMint resident Android app showing dues and monthly water and gas usage"
                                             width={270}
                                             height={590}
                                             className="rounded-2xl border border-white/20 shadow-2xl w-full h-auto"
@@ -105,7 +105,7 @@ export default function ProductsPage() {
                                     <p className="text-sm font-bold uppercase tracking-widest text-sutex-orange mb-3">{product.tagline}</p>
                                     <p className="text-gray-600 text-sm leading-relaxed mb-8 flex-grow">{product.description}</p>
                                     <span className="inline-flex items-center text-xs font-black uppercase tracking-widest text-sutex-navy group-hover:text-sutex-orange transition-colors">
-                                        <span>Explore ApartMeter</span>
+                                        <span>Explore MeterMint</span>
                                         <ArrowRight size={14} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
                                     </span>
                                 </div>
@@ -119,7 +119,7 @@ export default function ProductsPage() {
                             </div>
                             <h3 className="text-xl font-black text-sutex-navy mb-3">More in the Works</h3>
                             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
-                                New products are being engineered on the same framework that powers ApartMeter. Watch this space.
+                                New products are being engineered on the same framework that powers MeterMint. Watch this space.
                             </p>
                         </div>
                     </div>
