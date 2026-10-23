@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import { Boxes, ArrowRight, Sparkles } from "lucide-react";
+import { Boxes, ArrowRight, Sparkles, Check } from "lucide-react";
 import { GlobalHUD } from "@/components/GlobalHUD";
 
 const products = [
@@ -15,7 +15,14 @@ const products = [
         href: "/apartmeter/",
         tagline: "Fair billing. Faster collections.",
         description:
-            "Our flagship SaaS: per-flat utility metering, maintenance billing and UPI collections for apartment societies. Live in Karnataka.",
+            "The metering-and-money system for apartment societies. Residents photo-read their own meters — no new hardware — every flat pays for what it actually used, and the society's entire monthly billing collects itself online. Built for volunteer-run societies of 10–100 flats.",
+        highlights: [
+            "Photo-verified self-readings with on-device OCR — works with the dial meters you already have",
+            "One immutable statement: water, gas, DG power, maintenance and shared costs",
+            "UPI pay links on WhatsApp/SMS — money settles straight to the society's own account",
+            "Treasurer web panel with one-click statements; English, Kannada & Hindi",
+        ],
+        pricing: "₹20 / flat / month · ₹400 minimum · 30-day free trial",
         image: "/apartmeter/panel-dashboard.png",
         imageAlt: "MeterMint committee dashboard showing billing cycle, outstanding dues and flagged readings",
         badge: "Live in Karnataka",
@@ -103,7 +110,18 @@ export default function ProductsPage() {
                                         </span>
                                     </div>
                                     <p className="text-sm font-bold uppercase tracking-widest text-sutex-orange mb-3">{product.tagline}</p>
-                                    <p className="text-gray-600 text-sm leading-relaxed mb-8 flex-grow">{product.description}</p>
+                                    <p className="text-gray-600 text-sm leading-relaxed mb-6">{product.description}</p>
+                                    <ul className="space-y-2.5 mb-6 flex-grow">
+                                        {product.highlights.map((highlight) => (
+                                            <li key={highlight} className="flex items-start text-sm text-gray-600 leading-relaxed">
+                                                <Check size={16} className="text-sutex-orange mr-2.5 mt-0.5 shrink-0" strokeWidth={2.5} />
+                                                <span>{highlight}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <p className="text-xs font-bold uppercase tracking-widest text-sutex-navy bg-slate-50 border border-slate-100 px-4 py-3 mb-8">
+                                        {product.pricing}
+                                    </p>
                                     <span className="inline-flex items-center text-xs font-black uppercase tracking-widest text-sutex-navy group-hover:text-sutex-orange transition-colors">
                                         <span>Explore MeterMint</span>
                                         <ArrowRight size={14} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
