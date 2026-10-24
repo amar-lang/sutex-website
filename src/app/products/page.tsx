@@ -23,7 +23,7 @@ const products = [
             "Treasurer web panel with one-click statements; English, Kannada & Hindi",
         ],
         pricing: "₹20 / flat / month · ₹400 minimum · 30-day free trial",
-        image: "/apartmeter/panel-dashboard.png",
+        image: "/metermint/panel-dashboard.png",
         imageAlt: "MeterMint committee dashboard showing billing cycle, outstanding dues and flagged readings",
         badge: "Live in Karnataka",
     },
@@ -93,7 +93,7 @@ export default function ProductsPage() {
                                     {/* Secondary focus: resident app peeking over the panel */}
                                     <div className="absolute -bottom-10 left-6 w-[24%] min-w-[110px] group-hover:-translate-y-2 transition-transform duration-500">
                                         <Image
-                                            src="/apartmeter/app-resident-home.png"
+                                            src="/metermint/app-resident-home.png"
                                             alt="MeterMint resident Android app showing dues and monthly water and gas usage"
                                             width={270}
                                             height={590}
