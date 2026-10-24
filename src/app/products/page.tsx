@@ -11,8 +11,8 @@ import { GlobalHUD } from "@/components/GlobalHUD";
 const products = [
     {
         name: "MeterMint",
-        // Served by the MeterMint app itself via Nginx (still at /apartmeter/) — plain anchor, not a Next route
-        href: "/apartmeter/",
+        // Served by the MeterMint app itself via Nginx — plain anchor, not a Next route
+        href: "/metermint/",
         tagline: "Fair billing. Faster collections.",
         description:
             "The metering-and-money system for apartment societies. Residents photo-read their own meters — no new hardware — every flat pays for what it actually used, and the society's entire monthly billing collects itself online. Built for volunteer-run societies of 10–100 flats.",
